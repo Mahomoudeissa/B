@@ -108,7 +108,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="mt-6 text-xs text-zinc-600 tracking-widest uppercase">
+          <div className="mt-6 text-xs text-zinc-600 tracking-widest ">
             Special Birthday Bassmalla
           </div>
         </div>
