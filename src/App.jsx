@@ -104,7 +104,7 @@ export default function App() {
                 style={{ display: "none" }}
                 className="text-zinc-500 text-xs p-4 text-center"
               >
-                (تأكد من وضع ملف basmala.jpg في مجلد public)
+                <img src="bassmalla1.jpg" />
               </div>
             </div>
           </div>
