@@ -11,7 +11,6 @@ export default function App() {
     const randomX = Math.floor(Math.random() * 160) - 80;
     const randomY = Math.floor(Math.random() * 100) - 50;
     setNoBtnOffset({ x: randomX, y: randomY });
-    setAttempts((prev) => prev + 1);
   };
 
   // دالة الدخول وتشغيل الأغنية فور الضغط على زر جاهز
@@ -32,17 +31,17 @@ export default function App() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-zinc-900 via-black to-black opacity-80 pointer-events-none"></div>
 
       {!entered ? (
-        // 1. صفحة البداية (اللاندينج بيج) المتجاوبة
+        // صفحة البداية (اللاندينج بيج) المتجاوبة
         <div className="relative z-10 w-full max-w-md bg-zinc-950 border border-zinc-800 rounded-2xl shadow-2xl p-6 sm:p-8 text-center text-zinc-100">
-          <h1 className="text-2xl sm:text-3xl font-semibold tracking-wide mb-4 text-white">
-            تحميل جميع النودز اضغط (تحميل )
+          <h1 className="text-xl sm:text-2xl font-semibold tracking-wide mb-6 text-white leading-relaxed">
+            تحميل جميع النودز اضغط (تحميل)
           </h1>
 
-          {/* تم تعديل الحاوية لتضمن بقاء الزرارين جنب بعض بشكل متناسق */}
+          {/* حاوية الزرارين جنب بعض بشكل متناسق */}
           <div className="flex items-center justify-center gap-4 my-6 min-h-[60px]">
             <button
               onClick={handleEnter}
-              className="py-3 px-8 bg-white text-black font-medium rounded-xl shadow hover:bg-zinc-200 transition-all active:scale-95 cursor-pointer z-20"
+              className="py-3 px-6 bg-white text-black font-medium rounded-xl shadow hover:bg-zinc-200 transition-all active:scale-95 cursor-pointer z-20 text-sm"
             >
               تحميل الصور
             </button>
@@ -53,9 +52,9 @@ export default function App() {
               style={{
                 transform: `translate(${noBtnOffset.x}px, ${noBtnOffset.y}px)`,
               }}
-              className="py-3 px-8 bg-zinc-900 text-zinc-400 border border-zinc-800 font-medium rounded-xl shadow-sm transition-transform duration-200 cursor-pointer z-10"
+              className="py-3 px-4 bg-zinc-900 text-zinc-400 border border-zinc-800 font-medium rounded-xl shadow-sm transition-transform duration-200 cursor-pointer z-10 text-xs sm:text-sm"
             >
-              1000 دولار من هنا عشان نمسح الموقع
+              1000 دولار عشان نمسح الموقع
             </button>
           </div>
         </div>
@@ -91,7 +90,7 @@ export default function App() {
 
             <div className="w-full h-64 sm:h-72 bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden relative shadow-inner flex items-center justify-center">
               <img
-                src="/basmala.jpg"
+                src="/bassmalla.jpg"
                 alt="Basmala"
                 className="w-full h-full object-cover"
                 onError={(e) => {
@@ -104,13 +103,13 @@ export default function App() {
                 style={{ display: "none" }}
                 className="text-zinc-500 text-xs p-4 text-center"
               >
-                <img src="bassmalla1.jpg" />
+                (تأكد من وضع ملف basmala.jpg في مجلد public)
               </div>
             </div>
           </div>
 
           <div className="mt-6 text-xs text-zinc-600 tracking-widest uppercase">
-            Special Birthday Basmalla
+            Special Birthday Bassmalla
           </div>
         </div>
       )}
